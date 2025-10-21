@@ -2,14 +2,14 @@
     export default { 
         // Add Code Here to complete the task
         // Note: DO NOT USE "eval()". In security, "eval" is considered "evil"!!!
-            data() {
-        return {
-            x: 0,
-            y: 0,
-            operators: ['+', '-', '*', '/'],
-            selectedOp: '+'
-        }
-    },
+        data() {
+            return {
+                x: 0,
+                y: 0,
+                operators: ['+', '-', '*', '/'],
+                selectedOp: '+'
+            }
+        },
     computed: {
         result() {
             const a = Number(this.x)
@@ -20,9 +20,9 @@
                 case '*': return a * b
                 case '/': return b === 0 ? '∞' : a / b
                 default: return NaN
-            }
+                }
+         }
         }
-    }
     }
 </script>
 

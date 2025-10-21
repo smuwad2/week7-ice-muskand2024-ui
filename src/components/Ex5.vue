@@ -64,14 +64,14 @@
             reversestatusList() {
                 return this.statusList.slice(0).reverse();
             },
-            // buttonSpecialAttack() {
-            //     for (let details of this.buttonDetails) {
-            //         if (details.action == "specialAttack") {
-            //             let buttonSpecialAttack = details;
-            //             return buttonSpecialAttack
-            //         }
-            //     }
-            // }
+            buttonSpecialAttack() {
+                for (let details of this.buttonDetails) {
+                    if (details.action == "specialAttack") {
+                        let buttonSpecialAttack = details;
+                        return buttonSpecialAttack
+                    }
+                }
+            }
         },
 
         methods: {
